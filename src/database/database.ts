@@ -1,6 +1,7 @@
-import debugLib from 'debug';
 import { QueryTypes, Sequelize } from 'sequelize';
+
 import config from '../config';
+import debugLib from 'debug';
 
 const debug = debugLib('bdb:database');
 
@@ -49,5 +50,5 @@ const executeSQL = async (sentence: string, queryType: QueryTypes, sqlData?: any
             return Promise.reject({ message: 'An error occurred with the connection to the database.', errorBd });
         }
 };
-
+//esto es para consultar
 export { executeSQL };
