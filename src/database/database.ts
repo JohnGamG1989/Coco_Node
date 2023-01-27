@@ -51,4 +51,5 @@ const executeSQL = async (sentence: string, queryType: QueryTypes, sqlData?: any
         }
 };
 //esto es para consultar
+
 export { executeSQL };
